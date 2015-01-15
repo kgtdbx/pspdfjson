@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "PDFDocument": {
+      "id": "http://jsonschema.net/PDFDocument",
+      "type": "string"
+    },
+    "DocInfo": {
+      "id": "http://jsonschema.net/DocInfo",
+      "type": "array",
+      "items": {
+        "id": "http://jsonschema.net/DocInfo/0",
+        "type": "object",
+        "properties": {
+          "Filename": {
+            "id": "http://jsonschema.net/DocInfo/0/Filename",
+            "type": "string"
+          },
+          "Author": {
+            "id": "http://jsonschema.net/DocInfo/0/Author",
+            "type": "string"
+          },
+          "CreationDate": {
+            "id": "http://jsonschema.net/DocInfo/0/CreationDate",
+            "type": "string"
+          },
+          "Creator": {
+            "id": "http://jsonschema.net/DocInfo/0/Creator",
+            "type": "string"
+          },
+          "ModificationDate": {
+            "id": "http://jsonschema.net/DocInfo/0/ModificationDate",
+            "type": "string"
+          },
+          "Producer": {
+            "id": "http://jsonschema.net/DocInfo/0/Producer",
+            "type": "string"
+          },
+          "Title": {
+            "id": "http://jsonschema.net/DocInfo/0/Title",
+            "type": "string"
+          },
+          "TotalPages": {
+            "id": "http://jsonschema.net/DocInfo/0/TotalPages",
+            "type": "integer"
+          },
+          "body": {
+            "id": "http://jsonschema.net/DocInfo/0/body",
+            "type": "array",
+            "items": {
+              "id": "http://jsonschema.net/DocInfo/0/body/0",
+              "type": "object",
+              "properties": {
+                "page": {
+                  "id": "http://jsonschema.net/DocInfo/0/body/0/page",
+                  "type": "integer"
+                },
+                "pagetext": {
+                  "id": "http://jsonschema.net/DocInfo/0/body/0/pagetext",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "PDFDocument",
+    "DocInfo"
+  ]
+}
