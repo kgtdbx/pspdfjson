@@ -1,0 +1,29 @@
+{
+  "PDFDocument": "name",
+  "DocInfo": [
+    {
+      "Filename": "name",
+      "Author": "name",
+      "CreationDate": "date",
+      "Creator": "",
+      "ModificationDate": "",
+      "Producer": "",
+      "Title": "",
+      "TotalPages": 1,
+      "body": [
+        {
+          "page": 1,
+          "pagetext": "text"
+        },
+        {
+          "page": 2,
+          "pagetext": "text"
+        },
+        {
+          "page": 3,
+          "pagetext": "text"
+        }
+      ]
+    }
+  ]
+}
