@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 try {   
    	$libpath = Split-Path $MyInvocation.MyCommand.Path -Parent
-   	write-host "`n Loading iTextSharp.dll $libpath for PDF reading `n"
+   	write-host "`nLoading iTextSharp.dll $libpath for PDF reading `n"
    	Add-Type -Path "$libpath\lib\iTextSharp.dll"
    	[Reflection.Assembly]::LoadWithPartialName("System.Web") | Out-Null
    	write-host Loading System.Web for URL Encoding

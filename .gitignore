@@ -1,3 +1,7 @@
+#Script Product Files
+*.pdf.txt
+*.pdf.json
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
