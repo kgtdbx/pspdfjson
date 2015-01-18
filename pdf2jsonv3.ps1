@@ -1,3 +1,9 @@
+<#
+To Do: use jsonObject = [ordered]@{} to automate JSON syntax - either all Convertto-JSON or JavaScript.Serializer
+
+#>
+
+
 $ErrorActionPreference = "Stop"
 try {   
    	$libpath = Split-Path $MyInvocation.MyCommand.Path -Parent
