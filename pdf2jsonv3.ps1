@@ -13,7 +13,7 @@ try {
    	write-host Loading System.Web for URL Encoding
      }
 
-Catch { write-host "Error - Stopping Script: `n$_" ; exit}
+Catch { write-Error "Error - Stopping Script: `n$_" ; exit}
 
 $bc = [char]123	#{ 
 $ec = [char]125	#} 
@@ -79,7 +79,7 @@ foreach ($file in $files) {
 		}
 	catch
 		{
-			Write-Host "	Error: Unable to create reader -  $_"
+			Write-Error "	Error: Unable to create reader -  $_"
 			$errors++
 			$filesparsed = $filesparsed -1
 		}
@@ -100,7 +100,7 @@ Write-Host $("-" * 25)
 Write-Host "Totals Files: $totalfiles"	
 Write-Host "Files Parsed: $filesparsed"
 Write-Host "Pages Parsed: $totalPages"
-Write-Host "Errors: $errors"
+Write-Warning "Errors: $errors"
 Write-Host $("-" * 25)
 Write-Host ""	
 $Reader.Close();
